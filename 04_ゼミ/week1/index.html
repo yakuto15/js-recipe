@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>クイズ</h2>
+    <div>今日の天気は？</div>
+    <button id="sunny">晴れ</button>
+    <button id="rainy">雨</button>
+
+    <script>
+      const SUNBUTTON = document.getElementById("sunny")
+      const RAINBUTTON = document.getElementById("rainy")
+
+      SUNBUTTON.onclick = function() {
+        console.log("不正解")
+      }
+      RAINBUTTON.onclick = function() {
+        console.log("正解")
+      }
+    </script>
+  </body>
+</html>
