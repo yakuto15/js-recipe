@@ -40,7 +40,7 @@ const addButton = document.getElementById("add-button")
 // }
 
 //追加ボタンを押したときの処理を登録
-addButton.onclick = function() {
+addButton = function() {
   //カードを作成する
   const card = createCard(inputElement.value)
   container.append(card)
