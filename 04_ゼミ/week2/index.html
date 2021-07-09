@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>メモアプリ</title>
+  </head>
+  <body>
+    <input id="memo-input"></input>
+    <button id="add-button">追加</button>
+    <div id="memo-container"></div>
+
+    <script>
+    const input = document.getElementById("memo-input")
+    const button = document.getElementById("add-button")
+    const memoContainer = document.getElementById("memo-container")
+    
+    const list=[]
+
+    button.onclick = function() {
+      list.push(input.value)
+        const memo = document.createElement("div")
+        memo.textContent = input.value
+        memoContainer.append(memo)
+        localStorage.yakuto = list
+    }
+
+    //JSON 文字列と配列やオブジェクトを相互に変換する仕組み
+    //文字列　→　配列
+    JSON.parse('["aaa","bbbb"]')
+
+    //配列→文字列
+    const memoString = JSON.stringify(list)
+    
+    //保存
+    const toridashiList = JSON.parse(localStorage.list)
+    console.log(toridashiList)
+
+    for(){
+        
+    }
+  </script>
+  </body>
+</html>

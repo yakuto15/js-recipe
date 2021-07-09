@@ -8,6 +8,7 @@ changePicture.onclick = function() {
       return res.json() //結果をjsonとして読み込んで、次のthenに渡す
     })
     .then((data) => {
-      imageElement.src = data.message //画像を表示する
+      imageElement.src = da
+      ta.message //画像を表示する
     })
 }
