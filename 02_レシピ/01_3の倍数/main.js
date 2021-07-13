@@ -40,3 +40,19 @@ const FizzBuzz = function(number) {
     }
   }
 }
+
+//秒針
+let count = 0
+const countUp = function() {
+  count += 1
+  if (count % 3 === 0) {
+    console.log(`${count}!!!!`)
+  } else if (/3/.test(count)) {
+    console.log(`${count}!!!!`)
+  } else {
+    console.log(count)
+  }
+}
+const Seconds = function() {
+  setInterval(countUp, 1000)
+}
