@@ -17,11 +17,11 @@
     const memoContainer = document.getElementById("memo-container")
     
     let memos = []
-    JSON.stringify(memos) // '[]'
-    //ローカルストレージのmemosキーからJSONを読み込む(=変換する)
-    const memosJson = localStorage.memos
-    //JSON.parseで配列にしてmemosを更新する
-    memos = JSON.parse(memosJson)
+    // JSON.stringify(memos) // '[]'
+    // //ローカルストレージのmemosキーからJSONを読み込む(=変換する)
+    // const memosJson = localStorage.memos
+    // //JSON.parseで配列にしてmemosを更新する
+    // memos = JSON.parse(memosJson)
     
     if(localStorage.memos){
       // ローカルストレージのmemosキーからJSONを読み込む。
