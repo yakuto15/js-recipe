@@ -1,7 +1,17 @@
 const display = document.getElementById("display")
-const plusButton = document.getElementById("plus-button")
-const downButton = document.getElementById("down-buttton")
-const doubleButton = document.getElementById("double-button")
+const ZeroButton = document.getElementById("zero-button")
+const OneButton = document.getElementById("one-button")
+const TwoButton = document.getElementById("two-button")
+const ThreeButton = document.getElementById("three-button")
+const FourButton = document.getElementById("four-button")
+const FiveButton = document.getElementById("five-button")
+const SixButton = document.getElementById("six-button")
+const SevenButton = document.getElementById("seven-button")
+const EightButton = document.getElementById("eight-buttton")
+const NineButton = document.getElementById("seven-button")
+const PlusButton = document.getElementById("plus-button")
+const MinusButton = document.getElementById("minus-button")
+const MultopliedButton = document.getElementById("multiplied-button")
 
 //ボタンをクリックしたときの処理を登録
 // plusButton.onclick = function() {
@@ -16,12 +26,12 @@ plusButton.onclick = function() {
   display.textContent = count
 }
 
-downButton.onclick = function() {
+minusButton.onclick = function() {
   count -= 1
   display.textContent = count
 }
 
-doubleButton.onclick = function() {
-  count *= 2
+multipliedButton.onclick = function() {
+  count * count
   display.textContent = count
 }

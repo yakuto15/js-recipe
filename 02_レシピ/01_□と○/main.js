@@ -1,6 +1,6 @@
 const figure = document.getElementById("figure")
-// const squareButton = document.getElementById("square-button")
-// const circleButton = document.getElementById("circle-button")
+const squareButton = document.getElementById("square-button")
+const circleButton = document.getElementById("circle-button")
 
 // circleButton.onclick = function() {
 //   //figureにroundedクラスを追加する
